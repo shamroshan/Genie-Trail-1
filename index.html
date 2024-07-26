@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+</head>
+<body>
+    <!--Background UI-->
+    <div class="div1">
+        <h1 class="name" style="color: whitesmoke;">Hi There,<br>I'm <span class="sp">Genie AI Assistant</span></h1>
+        <h2 class="about">Welcome to Genie, your go-to chatbot for API monogram standards. <br>Get quick answers, detailed explanations, and industry guidance from <br>our comprehensive document library. Ask away!</h2>
+    </div>
+    
+    <div class="img">
+        <img src="bot.png" alt="" class="pic">
+    </div>
+
+    <!--Chatbot section-->
+    <df-messenger 
+        project-id="fluted-nation-429214-k4"
+        agent-id="c166238d-85d2-4753-ace9-6a69f011c107"
+        language-code="en"
+        max-query-length="-1">
+        <df-messenger-chat-bubble
+            chat-title="Genie" 
+            id="chatbotButton"
+            onclick="stopJumpingAnimation() 
+            ">
+        </df-messenger-chat-bubble>
+    </df-messenger>
+  
+    <script src="script.js"></script> 
+</body>
+</html>
